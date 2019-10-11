@@ -1,0 +1,389 @@
+
+   .guoqing{
+       width: 100%;
+       margin-top: 100px;
+   } 
+        .guoqing img{
+            width: 1270px;
+            height: 350px;
+             margin: 0 auto;
+            margin-bottom: 47px;
+        } 
+    
+    .there{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+        .therePic{
+            margin: auto;
+            width: 1270px;
+            display: flex;
+            justify-content: space-between; 
+        }
+            .therePic .aa{
+                width: 418px;
+                height: 408px;
+                overflow: hidden;
+            }
+            .therePic .aa h2{
+                font-size: 28px;
+                color:black ;
+                text-align: center;
+                margin-bottom: 10px;
+                line-height: 28px;
+            }
+            .therePic .aa p{
+                font-size: 18px;
+                color: #404040;
+                text-align: center;
+                line-height: 18px;
+            }
+            .aa .aJpg{
+                display: block;
+                width: 418px;
+                height: 325px;
+                overflow: hidden;
+                transition: all 1s;
+                margin-bottom: 18px;
+                border-radius: 6px;
+            }
+            .therePic .aa img{
+                transition: all 1s;
+                margin-bottom: 25px;
+                height: 325px;
+            }
+            .aJpg:hover img{
+                transform: scale(1.1); 
+            }
+    /* 人气推荐 */
+    .recom{
+        width: 100%;
+        height:1000px;
+        background: #f4f4f4;
+        margin: auto;
+    }
+        .recomSmal h1{
+            padding: 85px 0 42px;
+            text-align: center;
+        }
+        .recomCen{
+            width: 1270px;
+            height: 682px;
+            margin: auto;
+        }
+        .recomLeft{
+            width: 480px;
+            height:684px;
+            background: white;
+            padding: 9px;
+            border-radius: 5px;
+            float: left;
+        }
+        
+            .recomLeft img{
+                margin-top: 60px;
+                transition: all 1s;
+            }
+            .recomLeft:hover img{
+               transform: scale(1.08);
+            }
+                .recomLeft p{
+                font-size: 20px;
+                margin: 0 12px 10px;
+                color: black;
+            }
+            .recomLeft span{
+                display: block;
+                width: 438px;
+                height: 70px;
+                color: #c20d23;
+                font-size: 26px;
+                margin: 0 12px;
+                font-weight: 800;
+            }
+        .recomBtn{
+            width: 100%;
+            height: 29px;
+            margin: 60px auto 70px;
+            text-align: center;
+        }
+            .recomBtn a{
+                font-size: 21px;
+                color: #3c3934;
+                padding: 0 30px;
+                font-weight: 800;
+            }
+            .recomBtn span{
+                font-size: 21px;
+                color: #3c3934;
+                font-weight: 800;
+            }
+            .recomRight{
+                height: 682px;
+            }
+                .recRigSix{
+                    float: left;
+                    width: 245px;
+                    height: 345px;
+                    background: white;
+                    border-radius: 5px;
+                    margin-left:12px;
+                    margin-bottom: 12px;
+                    overflow: hidden;
+                }
+        
+        .recRigSix p{
+            width: 215px;
+            font-size: 16px;
+            padding: 9px;
+            color: black;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .recRigSix img{
+          transition: all 1s;
+        }
+            .recRigSix:hover img{
+            transform: scale(1.1);
+            }
+        .recRigSix span{
+            display: block;
+            width: 78px;
+            height: 21px;
+            color: #c20d23;
+            font-size: 18px;
+            font-weight: 800;
+            margin: 0 12px;
+        }
+
+        /* club */
+        .club{
+            width: 100%;
+          margin-bottom: 120px;
+        }
+            .club h1{
+                font-size: 40px;
+                color:black;
+                font-weight: 800;
+                text-align: center;
+                padding: 90px 0 23px;
+            }
+            .clubSmall{
+                width: 1283px;
+                height: 370px;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+            }
+                .clubSmall .clubThe1{
+                    width: 415px;
+                    height: 370px;
+                    background: url(../img/index/club1.jpg);
+                    border-radius: 4px;                
+                }
+                .clubSmall .clubThe2{
+                    width: 415px;
+                    height: 370px;
+                    background: url(../img/index/club2.jpg);
+                }
+                .clubSmall .clubThe{
+                    width: 415px;
+                    height: 370px;
+                }
+                    .clubThe h2{
+                        font-size: 32px;
+                        color: black;
+                        text-align: center;
+                        padding-top: 55px;
+                    }
+                    .clubThe h4{ 
+                        border-bottom:2px solid black;
+                        width: 60px; 
+                        margin: 14px auto;  
+                    }
+                    .clubThe p{
+                        text-align: center;
+                        color:#949391 ;
+                        font-size: 21px;
+                    }
+                .clubTheTop{
+                    width: 401px;
+                    height: 175px;
+                    background: url(../img/index/club3.jpg);
+                    padding-left: 14px;
+                    margin-bottom:20px ;
+                    border-radius: 4px;
+                }
+                    .clubTheTop h3{
+                        font-size: 27px;
+                        color: black;
+                        padding-top: 38px;
+                    }
+                    .clubTheTop h5{
+                        border-bottom:1px solid black;
+                        width: 60px; 
+                        margin-top: 11px; 
+                    }
+                    .clubTheTop h6{
+                        text-align: left;
+                        font-size: 17px;
+                        color:#949391 ;
+                        font-weight: 100;
+                        margin-top: 14px; 
+                        margin-bottom: 12px; 
+                    }
+                    .clubTheTop span{
+                        font-size: 15px;
+                        color:#949391 ;
+                    }
+                    .clubTheTop1{
+                        width: 401px;
+                        height: 175px;
+                        background: url(../img/index/club4.jpg);
+                        padding-left: 14px;
+                    }
+            /* 精选内容 */
+            .con{
+                width: 100%;
+                height: 565px;
+                background:#f4f4f4 ;
+            }
+                .con h2{
+                    font-size: 38px;
+                    color: black;
+                    padding-top: 94px;
+                    text-align: center;
+                    margin-bottom: 46px;
+                }
+                .conSmall{
+                    width:1283px;
+                    height: 305px;
+                    margin: auto;
+                    /* background: pink; */
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .conSmall .conThe{
+                    display: block;
+                    width: 415px;
+                    height: 305px;
+                    background: white;
+                }
+                .conSmall .conThe .conI{
+                    width: 415px;
+                    height: 244px;
+                    border-radius:6px;
+                    overflow: hidden;
+                    transition: all 1s;
+                }
+                .conThe .conI img{
+                        border-radius: 6px;
+                        margin-bottom: 28px;
+                        transition: all 1s;
+                    }
+                    .conI:hover img{
+				       transform: scale(1.1);
+                    }
+                    
+                    .conSmall p{
+                        font-size: 22px;
+                        color: #58595d;
+                        font-weight: 800;
+                        margin-bottom: 8px;
+                        padding-left: 20px;                    
+                    }
+                    .conSmall span{
+                        padding-left: 20px;
+                        font-size: 16px;
+                        color: #acada8;
+                    }
+        
+    /* 卡西欧头条 */
+    .casio{
+        width: 100%;
+        height: 757px;
+        position: relative;
+    }
+        .casio h2{
+            font-size: 38px;
+            color: black;
+            padding-top: 94px;
+            text-align: center;
+            margin-bottom: 46px;
+        }
+
+        .casio #casioA{
+            display: block;
+            float:right;
+            position: absolute;
+            top: 115px;
+            left: 1520px;
+            color: black;
+        }
+        .casioSmall{
+            width:1283px;
+            height: 460px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .casioSmall .casioThe{
+            display: block;
+            width: 415px;
+            height: 460px;
+            background: #f4f4f4;
+            overflow: hidden;
+            transition: all 1s;
+        }
+            .casioSmall img{
+                margin-bottom: 30px;
+                width: 415px;
+                height: 243px;
+                transition: all 1s;                
+
+            }
+            .casioThe a{
+                display: block;
+                height: 243px;
+                overflow: hidden;
+                transition: all 1s;
+                border-radius: 6px;
+                margin-bottom: 15px;
+            }
+            .casioThe a:hover img{
+                transform: scale(1.1);
+                transition: all 1s;                
+            }
+            .casioSmall h6{
+               font-size: 16px;
+               color: #727171;
+               padding-left: 24px;
+               margin-bottom: 10px;
+               font-weight: 100;
+            }
+            .casioSmall h5{
+                width: 365px;
+                height: 48px;
+                font-size: 23px;
+                color: black;
+                margin-left: 24px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                border-bottom: 1px solid black;
+                margin-bottom: 10px;
+            }
+            .casioSmall p{
+                font-size: 15px;
+                color: #727171;
+                margin-bottom: 10px;
+                padding-left: 24px;                    
+            }
+
+            .casioSmall #spa{
+                padding-left: 24px;
+                font-size: 15px;
+                color: black;
+            }
+    
+    

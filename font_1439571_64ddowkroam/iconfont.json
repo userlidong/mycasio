@@ -1,0 +1,184 @@
+{
+  "id": "1439571",
+  "name": "Casio",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "554357",
+      "name": "购物车",
+      "font_class": "iconset0308",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "579289",
+      "name": "操作成功",
+      "font_class": "caozuochenggong",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "632977",
+      "name": "查找",
+      "font_class": "chazhao",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "1009213",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "1129600",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "1191707",
+      "name": "正品保障2",
+      "font_class": "zhengpinbaozhang2",
+      "unicode": "e722",
+      "unicode_decimal": 59170
+    },
+    {
+      "icon_id": "1245556",
+      "name": "购物车",
+      "font_class": "gouwuche1",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "1330571",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e73c",
+      "unicode_decimal": 59196
+    },
+    {
+      "icon_id": "1764102",
+      "name": "在线客服",
+      "font_class": "zaixiankefu",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "2053187",
+      "name": "积分订单",
+      "font_class": "jifendingdan",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "2127128",
+      "name": "对话",
+      "font_class": "comments",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "2127130",
+      "name": "积分",
+      "font_class": "gifts",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "3588494",
+      "name": "房子",
+      "font_class": "fangzi",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    },
+    {
+      "icon_id": "3759004",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "4991261",
+      "name": "耳机",
+      "font_class": "erji",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "5643526",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "6444202",
+      "name": "招商小程序-密码不可见 ",
+      "font_class": "zhaoshangxiaochengxu-mimabukejian",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "6684310",
+      "name": "微信登录",
+      "font_class": "weixindenglu",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "7579990",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e728",
+      "unicode_decimal": 59176
+    },
+    {
+      "icon_id": "8288891",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e857",
+      "unicode_decimal": 59479
+    },
+    {
+      "icon_id": "8448526",
+      "name": "密码",
+      "font_class": "ziyuan",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "8574987",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "8767303",
+      "name": "手机",
+      "font_class": "shouji1",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "10392612",
+      "name": "盾牌",
+      "font_class": "dunpai",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "10593750",
+      "name": "大拇指,赞,good,优秀_jurassic",
+      "font_class": "jurassic_zan",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    }
+  ]
+}
