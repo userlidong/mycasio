@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/denglu.css">
+</head>
+<body>
+    <div class="head">
+        <div class="imgt"><img src="img/zhuce/logo.png" alt=""></div>
+        <div class="headSmall">
+            <div class="writ">
+                <div class="wezi">
+                    <h2>动态密码登录</h2><h3>账号登录</h3>
+                </div>
+                <div class="writSmall">
+                    <div class="inp">
+                            <i class="iconfont icon-shouji1"></i>
+                            <input type="text" placeholder="请输入手机号" id="username" name="username" type="text" onblur="checkuser(this)" >
+                    </div>
+                    <div class="kong">
+                        <p>手机号码不能为空</p>
+                    </div>
+
+                    <div class="inp inpu">
+                            <i class="iconfont icon-dunpai"></i>
+                            <input type="text" name="mobile" id="checkpass" placeholder="短信动态码">
+                    </div>
+                    <button>获取动态码</button>
+                    <div class="kong">
+                        <p>请输入手机验证码</p>
+                    </div>
+
+                    <!-- <div class="inp">
+                            <i class="iconfont icon-ziyuan"></i>
+                            <input type="text" placeholder="请输入密码"id="userpass" name="pass" >
+                            <i class="iconfont icon-jiemao"></i>
+                            <i class="iconfont icon-yanjing"></i>
+                    </div>
+                    <div class="kong">
+                        <p>密码不能为空</p>
+                    </div> -->
+
+                    <!-- <div class="sel">
+                        <input type="checkbox" data-required-error="请您先同意协议" class="chec">
+                        <span>我已阅读并同意</span>
+                        <a href="#">《用户注册协议》</a>
+                    </div> -->
+
+                    <div class="bot">
+                        <button type="submit" class="btn">登&nbsp;&nbsp;录</button>
+                    </div>
+                    <div class="wenzi">
+                        <a href="#">我要注册</a>
+                        <a href="#">忘记密码?</a>
+                    </div>
+                    <div class="there">
+                        <img src="img/denglu/qita.png" alt="">
+                    </div>
+                    <div class="ico">
+                        <a href="#"><img src="img/denglu/weibo.png" alt="" id="ig1"></a>
+                        <a href="#"><img src="img/denglu/zhifu.png" alt="" id="ig2"></a>
+                        <a href="#"><img src="img/denglu/weixin.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="foot">
+        <div class="footSmall">
+            <p>
+                <a href="#">C's Club </a>
+                &nbsp; &nbsp;| &nbsp; &nbsp;
+                <a href="#">帮助中心</a>
+                &nbsp; &nbsp;| &nbsp; &nbsp;
+                <i class="iconfont icon-zaixiankefu"></i>
+                <a href="#">在线客服</a>
+                <i class="iconfont icon-dianhua"></i>
+                <span>400-700-6655 (周一至周日 9:00-21:00)</span>
+            </p>
+            <a href="#">卡西欧官方商城</a>
+            <span>京ICP备 10009123号-10</span>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="js/jQuery.js"></script>
+<script>
+//     function checkuser(obj){
+//     let xhr =new XMLHttpRequest();
+
+//     //2 设置请求参数
+//     xhr.open("get","zhuce.php?username="+$("#username").value,true);
+
+//     //3 设置回调函数
+//     xhr.onreadystatechange = function(){
+//         if(xhr.readyState==4 && xhr.status==200){
+//             //5 接收请求
+//             if(xhr.responseText=="1"){
+//                 obj.nextElementSibling.innerHTML = "该用户已被使用";
+//             }else{
+//                 obj.nextElementSibling.innerHTML = "√";
+//             }
+//         }
+//     }
+//     //4 发送请求
+//     xhr.send();
+// }
+
+// function check(){
+//     //非空判断：
+//     if($("#username").value=="" || $("#userpass").value=="" || $("#checkpass").value==""){
+//         alert("亲，请把带星号的都输入了");
+//         return false;//阻止浏览器的默认行为
+//     }
+//     //判断用户名是否符合规则
+
+//     //判断密码和重复密码是否一致。
+  
+// }
+
+
+</script>

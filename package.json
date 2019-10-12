@@ -6,7 +6,10 @@
   "dependencies": {
     "gulp": "^4.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
