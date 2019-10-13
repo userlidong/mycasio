@@ -16,9 +16,10 @@
                 <h2>注册成为C's Club的会员</h2>
                 <div class="writSmall">
                     <div class="inp">
-                            <i class="iconfont icon-shouji1"></i>
-                            <input type="text" placeholder="请输入手机号" id="username" name="username" onblur="checkuser(this)"  style="outline:none;">
-                    </div>
+                        <i class="iconfont icon-shouji1"></i>
+                        <input type="text" placeholder="请输入手机号" id="tName" name="username" style="outline:none;">
+                    </div>   
+                    <span id="spa"></span><br> 
                     <div class="kong">
                         <p>手机号码不能为空</p>
                     </div>
@@ -34,7 +35,7 @@
 
                     <div class="inp">
                             <i class="iconfont icon-ziyuan"></i>
-                            <input type="text" placeholder="请输入密码"id="userpass" name="pass" style="outline:none;">
+                            <input type="text" placeholder="请输入密码" id="tPwd" name="pass" style="outline:none;">
                             <i class="iconfont icon-jiemao"></i>
                             <i class="iconfont icon-yanjing"></i>
                     </div>
@@ -52,7 +53,7 @@
                     </div>
                     
                     <div class="denglu">
-                        <a href="#">已有账号，去登录</a>
+                        <a href="http://127.0.0.1:5500/denglu.html">已有账号，去登录</a>
                     </div>
                 </div>
             </div>
@@ -80,38 +81,64 @@
 </html>
 <script src="js/jQuery.js"></script>
 <script>
-    function checkuser(obj){
-    let xhr =new XMLHttpRequest();
+    // $("#username").onblur = function (){
+    // let xhr =new XMLHttpRequest();
 
     //2 设置请求参数
-    xhr.open("get","zhuce.php?username="+$("#username").value,true);
 
+    // xhr.open("POST", "zhuce.php", "true");
     //3 设置回调函数
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState==4 && xhr.status==200){
-            //5 接收请求
-            if(xhr.responseText=="1"){
-                obj.nextElementSibling.innerHTML = "该用户已被使用";
-            }else{
-                obj.nextElementSibling.innerHTML = "√";
-            }
-        }
-    }
+//     xhr.onreadystatechange = function() {
+//             if (xhr.readyState == 4 && xhr.status == 200) {
+//                 //5.获取响应字符串
+//                 if (xhr.responseText == "1") {
+//                     $("#spa").innerHTML = "用户名已存在，请重新注册";
+//                 } else {
+//                     $("#spa").innerHTML = "恭喜注册成功";
+//                 }
+//             }
+//         }
     //4 发送请求
-    xhr.send();
-}
+//     xhr.send("username=" + $("#username").value);
+// }
 
-function check(){
-    //非空判断：
-    if($("#username").value=="" || $("#userpass").value=="" || $("#checkpass").value==""){
-        alert("亲，请把带星号的都输入了");
-        return false;//阻止浏览器的默认行为
-    }
+// function check(){
+//     //非空判断：
+//     if($("#username").value=="" || $("#userpass").value=="" || $("#checkpass").value==""){
+//         alert("亲，请把带星号的都输入了");
+//         return false;//阻止浏览器的默认行为
+//     }
     //判断用户名是否符合规则
 
     //判断密码和重复密码是否一致。
   
-}
+// }
 
+    let oUserName = document.getElementById("tName")
+	oUserName.onblur = function(){
+		//1.创建xhr对象
+		let xhr = new XMLHttpRequest();
+		//2.以post发送数据给后台,在open后必须设置请求头
+		xhr.open("post","php/zhuce.php",true);
+		//a.设置请求头
+		xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		//3.设置回调函数
+		xhr.onreadystatechange = function(){
+			if(xhr.status == 200 && xhr.readyState == 4){
+				fun(xhr.responseText);
+			}
+		}
 
+		//4.发送 
+		xhr.send("username="+this.value);
+	}
+	function fun(str){
+		let oSpan = document.querySelector("#spa");
+		//前后端分离
+		if(str == 1){
+			oSpan.innerHTML = "×";
+		}else{
+			oSpan.innerHTML = "√";
+		}
+	}
 </script>

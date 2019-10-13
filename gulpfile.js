@@ -43,9 +43,30 @@ gulp.task("watchall", async ()=>{
 
     gulp.watch("js/*.js",async ()=>{
         gulp.src("js/*.js")
-        // .pipe(uglify())
         .pipe(gulp.dest("D:\\phpStudy\\WWW\\mycasio\\js"));
     });
+
+    gulp.watch("img/**/*", async ()=>{
+        gulp.src("img/**/*")
+        .pipe(gulp.dest("D:\\phpStudy\\WWW\\mycasio\\img"));
+    })
+
+    gulp.watch("font/**/*", async ()=>{
+        gulp.src("font/**/*")
+        .pipe(gulp.dest("D:\\phpStudy\\WWW\\mycasio\\font"));
+    }); 
+
+    gulp.watch("css/*.css", async ()=>{
+        gulp.src("css/*.css")
+        .pipe(gulp.dest("D:\\phpStudy\\WWW\\mycasio\\css"));
+    })
+
+    gulp.watch("sass/*.scss", async ()=>{
+        gulp.src("sass/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("D:\\mycasio\\css"));
+    })
+});
 
     // gulp.watch(["js/index.js","js/goods.js"],async ()=>{
     //     gulp.src(["js/index.js","js/goods.js"])
@@ -62,16 +83,3 @@ gulp.task("watchall", async ()=>{
     //     .pipe(rename("commons.min.js"))
     //     .pipe(gulp.dest("D:\\phpStudy\\WWW\\mycasio\\js"));
     // })
-
-    gulp.watch("css/*.css", async ()=>{
-        gulp.src("css/*.css")
-        .pipe(gulp.dest("D:\\phpStudy\\WWW\\mycasio\\css"));
-    })
-
-    // gulp.task("sass", async ()=>{
-    //     gulp.src("sass/**/*.scss")
-    //     .pipe(sass())
-    //     .pipe(gulp.dest("D:\\phpStudy\\WWW\\mycasio\\css"));
-    // })
-
-});

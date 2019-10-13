@@ -43,9 +43,13 @@ img {
         color: #005BAB;
         font-weight: 100; }
       .head .headSmall .writ .writSmall {
-        width: 370px;
+        width: 400px;
         height: 317px;
         margin: auto; }
+        .head .headSmall .writ .writSmall #spa {
+          float: left;
+          height: 42px;
+          line-height: 42px; }
         .head .headSmall .writ .writSmall .kong {
           width: 300px;
           height: 24px;
@@ -57,7 +61,7 @@ img {
             font-size: 14px;
             display: none; }
         .head .headSmall .writ .writSmall .inp {
-          width: 370px;
+          width: 380px;
           text-align: center;
           height: 42px;
           border: 1px solid #e6e6e6;
@@ -67,7 +71,9 @@ img {
           border-bottom-right-radius: 21px;
           position: relative;
           top: 0;
-          text-align: left; }
+          text-align: left;
+          float: left;
+          margin-bottom: 20px; }
           .head .headSmall .writ .writSmall .inp .iconfont {
             font-size: 26px;
             color: #e6e6e6;
@@ -152,5 +158,3 @@ img {
     .foot .footSmall P {
       padding-top: 52px;
       margin-bottom: 22px; }
-
-/*# sourceMappingURL=zhuce.css.map */

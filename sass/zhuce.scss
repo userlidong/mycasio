@@ -46,9 +46,14 @@ img{
                 font-weight: 100;
             }
             .writSmall{
-                width: 370px;
+                width: 400px;
                 height: 317px;
                 margin: auto;
+                #spa{
+                   float: left;
+                   height: 42px;
+                   line-height: 42px;
+                }
                 .kong{
                     width: 300px;
                     height: 24px;
@@ -62,7 +67,7 @@ img{
                     }
                 }
                 .inp{
-                    width: 370px;
+                    width: 380px;
                     text-align: center;
                     height: 42px;
                     border: 1px solid #e6e6e6;
@@ -73,6 +78,8 @@ img{
                     position: relative;
                     top: 0;
                     text-align: left;
+                    float: left;
+                    margin-bottom: 20px;
                     .iconfont{
                         font-size: 26px;
                         color:#e6e6e6;
@@ -81,17 +88,17 @@ img{
                         top: 6px;
                      }
                     .icon-jiemao{
-                         margin-left: 88%;
-                         z-index: 2;
+                        margin-left: 88%;
+                        z-index: 2;
                      }
                     .icon-yanjing{
-                         display: none;
+                        display: none;
                      }
                     input{
-                         width: 60%;
-                         height: 42px;
-                         border: none;
-                         margin-left: 50px;
+                        width: 60%;
+                        height: 42px;
+                        border: none;
+                        margin-left: 50px;
                      }
                 }
                 .sel{
@@ -180,5 +187,7 @@ img{
             padding-top: 52px;
             margin-bottom: 22px;
         }
+
+
     }
     }

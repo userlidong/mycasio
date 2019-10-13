@@ -54,7 +54,7 @@
                         <button type="submit" class="btn">登&nbsp;&nbsp;录</button>
                     </div>
                     <div class="wenzi">
-                        <a href="#">我要注册</a>
+                        <a href="http://127.0.0.1:5500/zhuce.html">我要注册</a>
                         <a href="#">忘记密码?</a>
                     </div>
                     <div class="there">
@@ -92,12 +92,12 @@
 </html>
 <script src="js/jQuery.js"></script>
 <script>
-//     function checkuser(obj){
-//     let xhr =new XMLHttpRequest();
+     function checkuser(obj){
+    let xhr =new XMLHttpRequest();
 
 //     //2 设置请求参数
-//     xhr.open("get","zhuce.php?username="+$("#username").value,true);
-
+        xhr.open("POST", "zhuce.php", "true");
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 //     //3 设置回调函数
 //     xhr.onreadystatechange = function(){
 //         if(xhr.readyState==4 && xhr.status==200){
