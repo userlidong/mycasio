@@ -40,8 +40,8 @@ img{
             height: 484px;
             text-align: center;
             h2{
-                padding-top: 35px;
-                margin-bottom: 40px;
+                padding-top: 20px;
+                margin-bottom: 25px;
                 color: #005BAB;
                 font-weight: 100;
             }
@@ -59,13 +59,16 @@ img{
                     height: 24px;
                     padding-left: 10px;
                     text-align: left;
+                    color: #a94442;
                     p{
-                        margin: 5px;
-                        color: #a94442;
-                        font-size: 14px;
-                        display: none;
+                        width: 300px;
+                        height: 24px;
+                        padding-left: 10px;
+                        text-align: left;
                     }
                 }
+                }
+               
                 .inp{
                     width: 380px;
                     text-align: center;
@@ -75,17 +78,17 @@ img{
                     border-top-right-radius: 21px;
                     border-bottom-left-radius: 21px;
                     border-bottom-right-radius: 21px;
-                    position: relative;
                     top: 0;
                     text-align: left;
-                    float: left;
                     margin-bottom: 20px;
+                  
                     .iconfont{
                         font-size: 26px;
                         color:#e6e6e6;
-                        position: absolute;
-                        left: 10px;
-                        top: 6px;
+                       display: block;
+                        margin-left: 10px;
+                        margin-top: 5px;
+                        float: left;
                      }
                     .icon-jiemao{
                         margin-left: 88%;
@@ -98,13 +101,12 @@ img{
                         width: 60%;
                         height: 42px;
                         border: none;
-                        margin-left: 50px;
+                        margin-left: 30px;
                      }
                 }
                 .sel{
                     width: 353px;
                     text-align: left;
-                    margin-left: 10px;
                     font-size: 14px;
                     color: #bababa;
                     margin-bottom:32px;
@@ -135,6 +137,23 @@ img{
                         font-size: 13px;
                     }
                 }
+                #yanz{
+                    width: 300px;
+                    height: 24px;
+                    padding-left: 10px;
+                    text-align: left;
+                    // margin-bottom: 20px;
+                    #sha{
+                        width: 300px;
+                        height: 24px;
+                        padding-left: 10px;
+                        text-align: left;
+                    }
+                }
+                .inputLe{
+                    width: 370px;
+                    display: flex;
+                    justify-content: space-between;
                 .inpu{
                     width: 240px;
                     text-align: center;
@@ -144,34 +163,32 @@ img{
                     border-top-right-radius: 21px;
                     border-bottom-left-radius: 21px;
                     border-bottom-right-radius: 21px;
-                    position: relative;
-                    top: 0;
-                    float: left;
-                    margin-right: 18px;
                     text-align: left;
+                   
                     input{
                         width: 140px;
                         height: 42px;
-                        margin-left: 50px;
+                        margin-left: 30px;
                         border: none;
-                    }               
-                }
-               button{
-                    height: 42px;
+                    } 
+                }              
+                  }  
+                #but{
+                    height: 40px;
                     background: #dedede;
-                    width: 110px;
+                    width: 60px;
                     border: 1px solid #dedede;
                     color:#595757 ;
                     border-top-left-radius: 21px;
                     border-top-right-radius: 21px;
                     border-bottom-left-radius: 21px;
                     border-bottom-right-radius: 21px;
+                    outline:none; 
                     }
                 }
             }
         } 
-    }
-
+    
 .foot{
     width: 100%;
     height: 20%;
@@ -189,5 +206,5 @@ img{
         }
 
 
-    }
+        }
     }

@@ -51,7 +51,7 @@
                     </div> -->
 
                     <div class="bot">
-                        <button type="submit" class="btn">登&nbsp;&nbsp;录</button>
+                        <button type="submit" class="btn" id="name">登&nbsp;&nbsp;录</button>
                     </div>
                     <div class="wenzi">
                         <a href="http://127.0.0.1:5500/zhuce.html">我要注册</a>
@@ -92,38 +92,29 @@
 </html>
 <script src="js/jQuery.js"></script>
 <script>
-     function checkuser(obj){
-    let xhr =new XMLHttpRequest();
-
-//     //2 设置请求参数
-        xhr.open("POST", "zhuce.php", "true");
-        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
-//     //3 设置回调函数
-//     xhr.onreadystatechange = function(){
-//         if(xhr.readyState==4 && xhr.status==200){
-//             //5 接收请求
-//             if(xhr.responseText=="1"){
-//                 obj.nextElementSibling.innerHTML = "该用户已被使用";
-//             }else{
-//                 obj.nextElementSibling.innerHTML = "√";
-//             }
-//         }
-//     }
-//     //4 发送请求
-//     xhr.send();
-// }
-
-// function check(){
-//     //非空判断：
-//     if($("#username").value=="" || $("#userpass").value=="" || $("#checkpass").value==""){
-//         alert("亲，请把带星号的都输入了");
-//         return false;//阻止浏览器的默认行为
-//     }
-//     //判断用户名是否符合规则
-
-//     //判断密码和重复密码是否一致。
-  
-// }
-
+ var btn = document.getElementById('btn')
+		var textUsername = document.getElementsById('name')
+		var textPassword = document.getElementById('password')
+ 
+		btn.onclick = function(){
+			var username = textUsername.value
+			var password = textPassword.value
+ 
+			var xhr = new XMLHttpRequest()
+			xhr.open('POST','denglu.php')
+			// 以POST请求方式请求login.php
+            
+            xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
+            // 通过post方式发送urlencoded格式请求体，必须设置相应的请求头
+ 
+			xhr.send(`phone=${username}&password=${pass}`)
+			// es6新语法，模板字符串，通过esc键下面一个键的反引号，括起来的。注意这里面有固定格式，千万别有空格
+ 
+			xhr.onreadystatechange = function(){
+				if(this.readyState == 4){
+                   alert(this.responseText)
+				} 
+			}
+		}
 
 </script>

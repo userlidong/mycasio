@@ -7,8 +7,12 @@
     "gulp": "^4.0.2"
   },
   "devDependencies": {
+    "glob-watcher": "^5.0.3",
+    "gulp": "^4.0.2",
     "gulp-minify-css": "^1.2.4",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "watch": "^1.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
