@@ -50,8 +50,8 @@ img {
         justify-content: space-around;
         margin: 28px auto; }
         .head .headSmall .writ .wezi h2 {
-          color: #005BAB;
           font-weight: 100;
+          color: black;
           float: left;
           font-size: 18px;
           font-size: 26px;
@@ -62,23 +62,48 @@ img {
           font-weight: 100;
           float: left;
           font-size: 18px;
-          color: black;
+          color: #005BAB;
           font-size: 26px;
           margin-right: 55px; }
       .head .headSmall .writ .writSmall {
         width: 370px;
         height: 317px;
-        margin: auto; }
-        .head .headSmall .writ .writSmall .kong {
-          width: 300px;
-          height: 24px;
-          padding-left: 10px;
-          text-align: left; }
-          .head .headSmall .writ .writSmall .kong p {
-            margin: 5px;
-            color: #a94442;
-            font-size: 14px;
-            display: none; }
+        margin: auto;
+        position: relative; }
+        .head .headSmall .writ .writSmall .twodeng {
+          margin-bottom: 50px; }
+          .head .headSmall .writ .writSmall .twodeng .inp #username {
+            width: 280px;
+            outline: none; }
+          .head .headSmall .writ .writSmall .twodeng #inptwo {
+            width: 370px; }
+            .head .headSmall .writ .writSmall .twodeng #inptwo input {
+              width: 280px;
+              outline: none; }
+          .head .headSmall .writ .writSmall .twodeng .kong {
+            width: 300px;
+            height: 24px;
+            padding-left: 10px;
+            text-align: left; }
+            .head .headSmall .writ .writSmall .twodeng .kong p {
+              margin: 20px;
+              height: 50px;
+              color: #a94442;
+              font-size: 14px;
+              display: none; }
+        .head .headSmall .writ .writSmall .onedeng {
+          display: none; }
+          .head .headSmall .writ .writSmall .onedeng .kong {
+            width: 300px;
+            height: 24px;
+            padding-left: 10px;
+            text-align: left; }
+            .head .headSmall .writ .writSmall .onedeng .kong p {
+              margin: 20px;
+              height: 50px;
+              color: #a94442;
+              font-size: 14px;
+              display: none; }
         .head .headSmall .writ .writSmall .inp {
           width: 370px;
           text-align: center;

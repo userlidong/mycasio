@@ -1,15 +1,32 @@
-<?php 
-  
-  if(empty($_POST['username']) || empty($_POST['password'])){
-  	exit('请输入完整信息');
-  }
- 
-  $username = $_POST['username'];
-  $password = $_POST['password'];
- 
-  if($username === 'phone' && $password === 'pass'){
-  	exit('登录成功');
-  }
- 
-  exit('输入信息有误');
- ?>
+<?php
+     header("Content-type:text/html;charset=utf-8");
+    //1、接收前端的数据
+
+    $name = $_POST['phonenum'];
+	  $pwd = $_POST['passnum'];
+
+    //2、处理
+    //1)、链接数据库(搭桥)
+    $conn = mysql_connect("localhost","root","root");
+
+    if(!$conn){
+        echo("数据库出错".mysql_error());
+    }else{
+        //2)、选择库（选择目的地）
+        mysql_select_db("casio",$conn);
+
+        //3)、执行SQL语句（数据传输）
+        //3.1)
+        $sqlstr="select * from zhuce where phone='$name' and pass='$pwd' ";//查询该用户名在数据库中有没有。 
+          
+        $result = mysql_query($sqlstr,$conn);
+        $rows = mysql_num_rows($result);//获得结果的行数
+        if($rows>0){
+            //4)、关闭数据库
+            mysql_close($conn);
+            echo "1";//登录成功
+        }else{
+            echo "0";//登录失败
+        }
+    }
+?>

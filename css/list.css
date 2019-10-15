@@ -2,31 +2,29 @@
   width: 1100px;
   margin: 0 auto; }
   #box ul {
+    width: 1100px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto; }
     #box ul li {
-      width: 64px;
+      width: 264px;
       height: 422px;
       margin-bottom: 11px;
       border: 1px solid #e3e0e0; }
 
 #nan .pagination {
-  width: 800px;
-  margin-left: 40%; }
+  width: 1100px;
+  margin: 0 auto; }
   #nan .pagination a {
-    margin: 0 25px; }
+    margin: 0 10px; }
   #nan .pagination #btn-previous {
     width: 34px;
     height: 34px;
     text-align: center;
-    line-height: 34px;
     padding-bottom: 10px; }
-    #nan .pagination #btn-previous span {
-      display: inline-block; }
   #nan .pagination #btn-next {
     width: 34px;
     height: 34px;
     text-align: center;
-    line-height: 34px;
-    margin-right: 30%; }
+    margin-bottom: -10px; }

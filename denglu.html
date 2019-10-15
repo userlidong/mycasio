@@ -14,47 +14,50 @@
         <div class="headSmall">
             <div class="writ">
                 <div class="wezi">
-                    <h2>动态密码登录</h2><h3>账号登录</h3>
+                    <h2 class="sphh">动态密码登录</h2><h3 class="sphh">账号登录</h3>
                 </div>
                 <div class="writSmall">
-                    <div class="inp">
-                            <i class="iconfont icon-shouji1"></i>
-                            <input type="text" placeholder="请输入手机号" id="username" name="username" type="text" onblur="checkuser(this)" >
-                    </div>
-                    <div class="kong">
-                        <p>手机号码不能为空</p>
-                    </div>
+                    <div class="onedeng">
+                        <div class="inp">
+                                <i class="iconfont icon-shouji1"></i>
+                                <input type="text" placeholder="请输入手机号" id="username" name="username" type="text" onblur="checkuser(this)" >
+                        </div>
+                        <div class="kong">
+                            <p>手机号码不能为空</p>
+                        </div>
 
-                    <div class="inp inpu">
-                            <i class="iconfont icon-dunpai"></i>
-                            <input type="text" name="mobile" id="checkpass" placeholder="短信动态码">
+                        <div class="inp inpu">
+                                <i class="iconfont icon-dunpai"></i>
+                                <input type="text" name="mobile" id="checkpass" placeholder="短信动态码">
+                        </div>
+                        <button class="btttoo" >获取动态码</button>
+                        <div class="kong">
+                            <p>请输入手机验证码</p>
+                        </div>
                     </div>
-                    <button>获取动态码</button>
-                    <div class="kong">
-                        <p>请输入手机验证码</p>
-                    </div>
+                    <div class="twodeng" >
+                        <div class="inp">
+                                <i class="iconfont icon-shouji1"></i>
+                                <input type="text" placeholder="请输入手机号" id="usernametwo" name="username" value="12345678910">
+                        </div>
+                        <div class="kong">
+                            <p>手机号码不能为空</p>
+                        </div>
 
-                    <!-- <div class="inp">
-                            <i class="iconfont icon-ziyuan"></i>
-                            <input type="text" placeholder="请输入密码"id="userpass" name="pass" >
-                            <i class="iconfont icon-jiemao"></i>
-                            <i class="iconfont icon-yanjing"></i>
+                        <div class="inp inpu" id="inptwo">
+                                <i class="iconfont icon-dunpai"></i>
+                                <input type="password" name="mobile" id="checkpasstwo" placeholder="请输入密码">
+                        </div>
+                        <div class="kong">          
+                            <p>请输入手机验证码</p>
+                        </div>   
                     </div>
-                    <div class="kong">
-                        <p>密码不能为空</p>
-                    </div> -->
-
-                    <!-- <div class="sel">
-                        <input type="checkbox" data-required-error="请您先同意协议" class="chec">
-                        <span>我已阅读并同意</span>
-                        <a href="#">《用户注册协议》</a>
-                    </div> -->
 
                     <div class="bot">
-                        <button type="submit" class="btn" id="name">登&nbsp;&nbsp;录</button>
+                        <button type="submit" class="btn" id="nameden">登&nbsp;&nbsp;录</button>
                     </div>
                     <div class="wenzi">
-                        <a href="http://127.0.0.1:5500/zhuce.html">我要注册</a>
+                        <a href="http://localhost/mycasio/zhuce.html">我要注册</a>
                         <a href="#">忘记密码?</a>
                     </div>
                     <div class="there">
@@ -91,30 +94,30 @@
 </body>
 </html>
 <script src="js/jQuery.js"></script>
+<script src="js/denglu.js"></script>
 <script>
- var btn = document.getElementById('btn')
-		var textUsername = document.getElementsById('name')
-		var textPassword = document.getElementById('password')
- 
-		btn.onclick = function(){
-			var username = textUsername.value
-			var password = textPassword.value
- 
-			var xhr = new XMLHttpRequest()
-			xhr.open('POST','denglu.php')
-			// 以POST请求方式请求login.php
-            
-            xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
-            // 通过post方式发送urlencoded格式请求体，必须设置相应的请求头
- 
-			xhr.send(`phone=${username}&password=${pass}`)
-			// es6新语法，模板字符串，通过esc键下面一个键的反引号，括起来的。注意这里面有固定格式，千万别有空格
- 
-			xhr.onreadystatechange = function(){
-				if(this.readyState == 4){
-                   alert(this.responseText)
-				} 
-			}
-		}
+//  window.onload=function(){
+//     let hh=document.getElementsByClassName("sphh");
+//     let odiv=document.getElementsByClassName("onedeng");
+//     let odivt=document.getElementsByClassName("twodeng");
+//     for(var i=0;i<hh.length;i++){
+//             hh[1].onclick=function(){
+//                 odiv.style.display="none";
+//                 odivt.style.display="block";
+//                 };
+//             hh[0].onclick=function(){
+//                 odiv.style.display="block"; 
+//                 odivt.style.display="none"; 
+//                 };
+//             };
+//         };
 
+        $(".sphh").eq(0).click(function(){
+            $("#onedeng").css("display","block");
+            $("#twodeng").css("display","none");
+        });
+        $(".sphh").eq(1).click(function(){
+            $("#onedeng").css("display","none");
+            $("#twodeng").css("display","block");
+        });
 </script>

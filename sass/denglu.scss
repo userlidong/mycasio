@@ -50,13 +50,14 @@ img{
             position: absolute;
             top: 88px;
             left: 68%;
+    
             .wezi{
                 display: flex;
                 justify-content: space-around;
                 margin: 28px auto;
                    h2{
-                    color: #005BAB;
                     font-weight: 100;
+                    color: black;
                     float: left;
                     font-size: 18px;
                     font-size: 26px;
@@ -68,27 +69,62 @@ img{
                         font-weight: 100;
                         float: left;
                         font-size: 18px;
-                        color: black;
+                        color: #005BAB;
                         font-size: 26px;
                         margin-right:55px;
                         }
-            }
+                }
             .writSmall{
                 width: 370px;
                 height: 317px;
                 margin: auto;
+                position: relative;
+                 .twodeng{
+                margin-bottom: 50px;
+                // display: none;
+                .inp{
+                    #username{
+                        width: 280px;
+                        outline:none
+                    }
+                }
+                #inptwo{
+                    width: 370px;
+                    input{
+                        width: 280px;
+                        outline:none
+                    }
+                }
                 .kong{
                     width: 300px;
                     height: 24px;
                     padding-left: 10px;
                     text-align: left;
                     p{
-                        margin: 5px;
+                        margin: 20px;
+                        height: 50px;
                         color: #a94442;
                         font-size: 14px;
                         display: none;
                     }
                 }
+                 }
+                .onedeng{
+                    display: none;
+                .kong{
+                    width: 300px;
+                    height: 24px;
+                    padding-left: 10px;
+                    text-align: left;
+                    p{
+                        margin: 20px;
+                        height: 50px;
+                        color: #a94442;
+                        font-size: 14px;
+                        display: none;
+                    }
+                }
+            }
                 .inp{
                     width: 370px;
                     text-align: center;
@@ -210,7 +246,10 @@ img{
                     
                 }
                 }
+            
+             
             }
+
         } 
     }
 

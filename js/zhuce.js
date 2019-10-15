@@ -1,87 +1,115 @@
-// $(".close").click(function(){
-// 	$(".register").style.display = "none";
-// });
 
-// let str;
-// $(".ceshi").focus(function(){
-// 	str = $(this).prop("placeholder");
-// 	$(this).attr("placeholder","");
-// 	$(this).css("color","black");
-// });
+    // 电话号码
+	var oTel=document.getElementById("tName");
+	var oTiti=document.getElementById("titie");
+oTel.onblur=function(){  //光标离开判断输入是否正确
+   
+	var flagTel=false;
+	var regName=/^1\d{10}$/;  //手机号： 15  13  18 
+	if(regName.test(oTel.value)){
+		flagTel=true;   
+		oTiti.innerHTML="";
+	}else{
+		flagTel=false;
+		oTiti.innerHTML="输入有误请重新输入";
+	}
+}
 
-// $(".ceshi").blur(function(){
-// 	$(this).attr("placeholder",str);
-// 	$(this).css("color","#bbb");
-// });
+//验证码
+var _yCode=document.getElementById("checkpass");
+var _sCode=document.getElementById("sCode");
+var _oa=document.getElementById("but");
+var flag_yCode=false;
+var oYw=document.getElementById("sha");
+_oa.onclick= function() {
+	var str="";
+	for(var i=0;i<4;i++){
+		var num = parseInt(Math.random()*150);   //
+		if((num>=48 && num<=57)){
+			str += String.fromCharCode(num);
+		}else{
+			i--;
+		}
+	}
+	_sCode.innerHTML=str;
+	_sCode.style.color= bg2();
+}
+// 验证码是否一致
+_yCode.onblur=function(){  //光标离开判断输入是否正确
+	if(_sCode.innerHTML==_yCode.value){
+		flag_yCode=true;   
+		oYw.innerHTML="";
+	}else{
+		flag_yCode=false;
+		oYw.innerHTML="验证码输入不一致";
+	}
+}
+// 随机函数
+	function bg2(){
+		 return '#'+Math.floor(Math.random()*0xffffff).toString(16);
+	 }
 
-// let count=0;
-// $("#agree").click(function(){	
-// 	if(count%2==0){
-// 		$(this).css("border","solid 1px #ddd");
-// 		$(this).children().css("display","none");
-// 	}else{
-// 		$(this).css("border","solid 1px #cf1d1b");
-// 		$(this).children().css("display","block");
-// 	}
-// 	count++;
-// });
+	 //密码
+var oPwd=document.getElementById("tPwd");
+var oTip1=document.getElementById("tip1");
+var flagPwd=false;
+oPwd.onblur=function(){  //光标离开判断输入是否正确
+	var regName=/^.{6,18}$/;  //两位数
+	if(regName.test(oPwd.value)){
+		flagPwd=true;   
+			var num=/^\d+$/;//纯数字
+			var word=/^[a-zA-Z]+$/;//纯字母
+			var Char=/^[!@$%#]+$/;//纯特殊字符
+			
+			var _num=/\d+/;//包含数字
+			var _word=/[a-zA-Z]+/;//包含字母
+			var _Char=/[!@$%#]+/;//包含特殊字符
+			var str=oPwd.value;
+			if(num.test(str)||word.test(str)||Char.test(str)){
+				oTip1.innerHTML="密码等级弱";
+			}else if(_num.test(str)&&_word.test(str)&&_Char.test(str)){
+				oTip1.innerHTML="密码等级强";
+			}else{
+			oTip1.innerHTML="密码等级中";
+			}
+		}else{
+			flagPwd=false;
+			oTip1.innerHTML="";
+		}
+}
 
-// $(".zhuce").click(function(){
-// 	let str1 = $("#phonenum")[0].value;
-// 	let str2 = $("#mima1")[0].value;
-// 	let reg1 = /^\d{11}$/;
-// 	let reg2 = /\S{6}/;
-// 	//非空判断
-// 	if($("#phonenum")[0].value=="" || reg1.test(str1)==false){
-// 		$(".jiancha").html("请检查手机号");
-// 		$(".jiancha").css("display","block");
-// 		return false;
-// 	}else if($("#mima1")[0].value=="" || reg2.test(str2)==false){
-// 		$(".jiancha").html("请至少输入6位以上的密码");
-// 		$(".jiancha").css("display","block");
-// 		return false;
-// 	}else if($("#mima1")[0].value!=$("#mima2")[0].value){
-// 		$(".jiancha").html("两次输入的密码不一致");
-// 		$(".jiancha").css("display","block");
-// 		return false;
-// 	}else if(count%2!=0){
-// 		$(".jiancha").html("您需要同意《坚果服务协议》");
-// 		$(".jiancha").css("display","block");
-// 		return false;
-// 	}else{
-		var xhr = new XMLHttpRequest();
+    $("#idD").click(function(){
+	var agree = document.getElementById("Agree").checked
+		if(!agree){  
+			alert("请同意用户协议")
+		}else if(oTiti.innerHTML!=""){//电话号码
+			alert("请输入正确电话号码")
+		}else if(oYw.innerHTML!=""){
+			alert("请输入正确验证码")
+		}else if(oTip1.innerHTML==""){
+			alert("请输入6位以上密码")
+		}else{
 
-		xhr.open("post","zhuce.php",true);
-        // 如果想要使用post提交数据,必须添加此行
-        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		let xhr = new XMLHttpRequest();
 
-        // 将数据通过send方法传递
-        xhr.send('name=fox&age=18');
+		xhr.open("post","php/zhuce.php",true);
 
-        // 发送并接受返回值
-        xhr.onreadystatechange = function () {
-            // 这步为判断服务器是否正确响应
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                alert(xhr.responseText);
-            }
-        };
-		// xhr.onreadystatechange = function(){
-		// 	if(xhr.readyState==4 && xhr.status==200){
-		// 		if(xhr.responseText=="-1"){
-		// 			$(".jiancha").html("手机号已被注册");
-		// 			$(".jiancha").css("display","block");
-		// 		}else if(xhr.responseText=="0"){
-		// 			$(".jiancha").html("注册失败");
-		// 			$(".jiancha").css("display","block");
-		// 		}else if(xhr.responseText=="1"){
-		// 			$(".jiancha").html("注册成功请<a href='login.html'>登录</a>");
-		// 			$(".jiancha").css("display","block");
-		// 		}
-		// 	}
-		// }
-		// //post方式：设置请求头
-		// xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-		// //post方式：把传给服务器端数据（键值对）放在send函数的参数里
-		// let sendstr = `phonenum=${$("#phonenum")[0].value}&pass=${$("#mima1")[0].value}`;
-		// xhr.send(sendstr);
-	
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				if(xhr.responseText=="-1"){
+					alert("该号码已被注册")
+				}else if(xhr.responseText=="0"){
+					alert("注册失败")
+				}else if(xhr.responseText=="1"){
+					alert("注册成功");
+					location='index.html';
+				}
+			}
+		}
+		//post方式：设置请求头
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		//post方式：把传给服务器端数据（键值对）放在send函数的参数里
+		let sendstr = `phonenum=${$("#tName")[0].value}&pass=${$("#tPwd")[0].value}`;
+		xhr.send(sendstr);
+		}
+});
