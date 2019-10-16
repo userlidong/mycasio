@@ -52,7 +52,7 @@
             </ul>
             <from>
                 <div class="logoRight">
-                    <input type="text" name="" id="inp" placeholder="辞计旅行的沙发" >
+                    <input type="text" name="" id="inp" placeholder="辞计旅行的沙发" style="outline: none;border:1px solid #898989">
                     <a href="#"><i class="iconfont icon-chazhao"></i> </a> 
                 </div>
             </from>  
@@ -589,33 +589,6 @@
         </div>
     </div>
 
-   <!-- <div class="nav">
-        <div class="shock">房子图标</div>
-        <div class="bigPic">
-            <div class="bigPicLeft">
-                    <div id="smallBox">
-                        <div id="mask"></div>
-                    </div>
-                    <div id="bigBox">
-                    </div>
-                <ul id="simages">
-                    <li><img src="img/big/big2.jpg" width="100%" alt=""></li>
-                    <li><img src="img/big/big3.jpg" width="100%" alt=""></li>
-                    <li><img src="img/big/big4.jpg" width="100%" alt=""></li>
-                </ul>
-            </div>
-            
-            <div class="bigPicRight"></div>
-        </div>
-
-   </div>
-  
- -->
-
-
-
-
-
     <div class="fiv">
         <div class="Small">
             <a href="#"><img src="img/index/fiv1.jpg" alt=""><span>正品保证</span></a>
@@ -780,8 +753,8 @@
 <script src="js/big.js"></script>
 <script src="js/public.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-<!-- <script src="js/big.js"></script> -->
 <script>
+    
     //轮播图
     let oBox=$("#oBox").eq(0);
     let oImg =$(".oImgBox img");
@@ -802,7 +775,7 @@
      mf.move();  //调用鼠标移动函数
      
 
-     window.onload=function(){
+    function sma(){
          let smapica = document.getElementById("smamao");
          let bigpica = document.getElementById("bigmao");
         smapica.onmousemove=function(){
@@ -822,6 +795,7 @@
                 }
         }
 
+
         var mySwiper = new Swiper('.swiper-container', {
         autoplay:true,//等同于以下设置
        
@@ -835,6 +809,8 @@
             prevEl: '.swiper-button-prev',
             },
         });
+
+
 
 </script>
     

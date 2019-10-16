@@ -1,0 +1,203 @@
+.car {
+  width: 100%; }
+  .car .carsma {
+    width: 1130px;
+    margin: 0 auto; }
+    .car .carsma p {
+      width: 1100px;
+      margin: 10px auto; }
+      .car .carsma p img {
+        display: inline-block;
+        margin-right: 6px; }
+      .car .carsma p a {
+        font-size: 14px;
+        color: black; }
+    .car .carsma .sub {
+      width: 1100px;
+      margin-bottom: 50px; }
+      .car .carsma .sub img {
+        display: block;
+        margin: 0 auto; }
+    .car .carsma h1 {
+      width: 1130px;
+      height: 24px;
+      background: #fafafa;
+      margin: 0 auto -15px; }
+    .car .carsma table {
+      width: 1130px;
+      margin: 20px auto; }
+      .car .carsma table tr {
+        border-bottom: 1px solid #e0e0e0; }
+        .car .carsma table tr td {
+          text-align: left; }
+          .car .carsma table tr td button {
+            background: white;
+            border: 1px solid #898989;
+            outline: none; }
+          .car .carsma table tr td span {
+            margin: 0 10px; }
+    .car .carsma .tie {
+      width: 1100px;
+      margin: 0 auto; }
+      .car .carsma .tie a {
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 950px; }
+        .car .carsma .tie a h6 {
+          width: 20px;
+          line-height: 16px; }
+    .car .carsma .jies {
+      width: 1100px;
+      height: 40px;
+      background: #fafafa;
+      padding: 10px;
+      margin: 30px auto; }
+      .car .carsma .jies a {
+        display: block;
+        width: 144px;
+        height: 40px;
+        margin-left: 950px;
+        background: #c60c21;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        color: white; }
+    .car .carsma .thea {
+      width: 1130px;
+      margin: 20px auto;
+      padding-bottom: 10px;
+      border-bottom: 1px solid black; }
+      .car .carsma .thea .twa {
+        font-weight: 800;
+        font-size: 14px;
+        color: black;
+        display: block;
+        height: 30px;
+        width: 150px;
+        text-align: center;
+        line-height: 30px;
+        float: left; }
+      .car .carsma .thea .lasta {
+        color: black;
+        font-size: 12px; }
+  .car #box {
+    width: 1130px;
+    margin: 20px auto; }
+    .car #box ul {
+      width: 1130px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 auto; }
+      .car #box ul li {
+        width: 254px;
+        height: 422px;
+        margin-bottom: 11px;
+        border: 1px solid #e3e0e0;
+        padding-left: 10px;
+        text-align: center; }
+        .car #box ul li a {
+          width: 221px;
+          margin: 0 auto;
+          position: relative; }
+          .car #box ul li a .picbig {
+            margin-bottom: 15px; }
+          .car #box ul li a .picsma {
+            margin-bottom: 15px;
+            margin-left: 20px; }
+          .car #box ul li a .picdz {
+            margin-bottom: 20px;
+            margin-left: 20px; }
+          .car #box ul li a .sk {
+            position: absolute;
+            top: 200px; }
+        .car #box ul li p {
+          color: black;
+          font-size: 12px;
+          margin-bottom: 20px; }
+        .car #box ul li span {
+          color: #cc0000;
+          font-size: 14px;
+          font-weight: 800;
+          margin-bottom: 14px;
+          display: block; }
+        .car #box ul li .thaa {
+          width: 268px;
+          height: 18px;
+          display: flex;
+          justify-content: space-between; }
+          .car #box ul li .thaa a {
+            width: 88px;
+            border-right: 1px solid black;
+            font-size: 12px;
+            color: black;
+            line-height: 18px;
+            padding-right: 10px; }
+            .car #box ul li .thaa a img {
+              display: inline-block;
+              margin-right: 4px; }
+          .car #box ul li .thaa a:hover {
+            text-decoration: none; }
+      .car #box ul li:hover {
+        border: 1px solid blue; }
+  .car #boxsc {
+    width: 1130px;
+    margin: 20px auto; }
+    .car #boxsc ul {
+      width: 1130px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 auto; }
+      .car #boxsc ul li {
+        width: 254px;
+        height: 422px;
+        margin-bottom: 11px;
+        border: 1px solid #e3e0e0;
+        padding-left: 10px;
+        text-align: center; }
+        .car #boxsc ul li a {
+          width: 221px;
+          margin: 0 auto;
+          position: relative; }
+          .car #boxsc ul li a .picbig {
+            margin-bottom: 15px; }
+          .car #boxsc ul li a .picsma {
+            margin-bottom: 15px;
+            margin-left: 20px; }
+          .car #boxsc ul li a .picdz {
+            margin-bottom: 20px;
+            margin-left: 20px; }
+          .car #boxsc ul li a .sk {
+            position: absolute;
+            top: 200px; }
+        .car #boxsc ul li p {
+          color: black;
+          font-size: 12px;
+          margin-bottom: 20px; }
+        .car #boxsc ul li span {
+          color: #cc0000;
+          font-size: 14px;
+          font-weight: 800;
+          margin-bottom: 14px;
+          display: block; }
+        .car #boxsc ul li .thaa {
+          width: 268px;
+          height: 18px;
+          display: flex;
+          justify-content: space-between; }
+          .car #boxsc ul li .thaa a {
+            width: 88px;
+            border-right: 1px solid black;
+            font-size: 12px;
+            color: black;
+            line-height: 18px;
+            padding-right: 10px; }
+            .car #boxsc ul li .thaa a img {
+              display: inline-block;
+              margin-right: 4px; }
+          .car #boxsc ul li .thaa a:hover {
+            text-decoration: none; }
+      .car #boxsc ul li:hover {
+        border: 1px solid blue; }

@@ -102,7 +102,7 @@ oPwd.onblur=function(){  //光标离开判断输入是否正确
 					alert("注册失败")
 				}else if(xhr.responseText=="1"){
 					alert("注册成功");
-					location='index.html';
+					location='denglu.html';
 				}
 			}
 		}

@@ -1,6 +1,9 @@
+#lodoo .logoTop .logoLeft a:hover {
+  text-decoration: none; }
+
 #box {
   width: 1100px;
-  margin: 0 auto; }
+  margin: 20px auto; }
   #box ul {
     width: 1100px;
     display: flex;
@@ -8,23 +11,143 @@
     flex-wrap: wrap;
     margin: 0 auto; }
     #box ul li {
-      width: 264px;
+      width: 254px;
       height: 422px;
       margin-bottom: 11px;
-      border: 1px solid #e3e0e0; }
+      border: 1px solid #e3e0e0;
+      padding-left: 10px;
+      text-align: center; }
+      #box ul li a {
+        width: 221px;
+        margin: 0 auto;
+        position: relative; }
+        #box ul li a .picbig {
+          margin-bottom: 15px; }
+        #box ul li a .picsma {
+          margin-bottom: 15px;
+          margin-left: 20px; }
+        #box ul li a .picdz {
+          margin-bottom: 20px;
+          margin-left: 20px; }
+        #box ul li a .sk {
+          position: absolute;
+          top: 200px; }
+      #box ul li p {
+        color: black;
+        font-size: 12px;
+        margin-bottom: 20px; }
+      #box ul li span {
+        color: #cc0000;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 14px;
+        display: block; }
+      #box ul li .thaa {
+        width: 268px;
+        height: 18px;
+        display: flex;
+        justify-content: space-between; }
+        #box ul li .thaa a {
+          width: 88px;
+          border-right: 1px solid black;
+          font-size: 12px;
+          color: black;
+          line-height: 18px;
+          padding-right: 10px; }
+          #box ul li .thaa a img {
+            display: inline-block;
+            margin-right: 4px; }
+        #box ul li .thaa a:hover {
+          text-decoration: none; }
+    #box ul li:hover {
+      border: 1px solid blue; }
 
-#nan .pagination {
-  width: 1100px;
-  margin: 0 auto; }
-  #nan .pagination a {
-    margin: 0 10px; }
-  #nan .pagination #btn-previous {
-    width: 34px;
-    height: 34px;
-    text-align: center;
-    padding-bottom: 10px; }
-  #nan .pagination #btn-next {
-    width: 34px;
-    height: 34px;
-    text-align: center;
-    margin-bottom: -10px; }
+.xia {
+  width: 100%; }
+  .xia .xiasma {
+    width: 350px;
+    height: 50px;
+    margin: auto; }
+    .xia .xiasma a {
+      margin: 0 20px; }
+
+.check {
+  width: 100%;
+  margin-bottom: 72px; }
+  .check .checksma {
+    width: 1100px;
+    margin: 0 auto; }
+    .check .checksma h2 {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 30px; }
+    .check .checksma table {
+      width: 1100px; }
+      .check .checksma table tr {
+        width: 1100px;
+        height: 43px;
+        line-height: 43px;
+        border-bottom: 1px solid #898989; }
+        .check .checksma table tr td {
+          width: 157px;
+          text-align: left;
+          color: #898989;
+          font-size: 12px; }
+          .check .checksma table tr td a {
+            display: block;
+            width: 70px;
+            height: 24px;
+            border: 1px solid #898989;
+            text-align: center;
+            line-height: 24px;
+            color: black;
+            font-size: 12px; }
+          .check .checksma table tr td input {
+            vertical-align: baseline;
+            vertical-align: text-bottom;
+            margin-right: 6px; }
+    .check .checksma .ttw {
+      width: 370px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 730px;
+      margin-top: 10px; }
+      .check .checksma .ttw a {
+        display: block;
+        width: 180px;
+        height: 30px; }
+      .check .checksma .ttw .ona {
+        background: black;
+        color: white;
+        line-height: 30px;
+        text-align: center; }
+      .check .checksma .ttw .twa {
+        background: #898989;
+        color: #FAFAFA;
+        line-height: 30px;
+        text-align: center; }
+
+.duo {
+  width: 100%; }
+  .duo .duosma {
+    margin: 0 auto;
+    width: 1100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding-top: 10px; }
+    .duo .duosma a {
+      display: block;
+      width: 182px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: black;
+      background: #FAFAFA; }
+      .duo .duosma a input {
+        vertical-align: baseline;
+        vertical-align: text-bottom;
+        margin-right: 6px; }

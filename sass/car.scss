@@ -1,0 +1,250 @@
+.car{
+    width: 100%;
+    .carsma{
+        width: 1130px;
+        margin: 0 auto;
+        p{
+            width: 1100px;
+            margin: 10px auto;
+            img{
+                display: inline-block;
+                margin-right: 6px;
+            }
+            a{
+                font-size: 14px;
+                color: black;
+            }
+        }
+        .sub{
+            width: 1100px;
+            margin-bottom: 50px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        h1{
+            width: 1130px;
+            height: 24px;
+            background: #fafafa;
+            margin: 0 auto -15px;
+        }
+        table{
+            width: 1130px;
+            margin: 20px auto;
+            tr{
+                border-bottom: 1px solid #e0e0e0;
+                td{
+                text-align: left;
+                button{
+                    background: white;
+                    border: 1px solid #898989;
+                    outline: none;
+                }
+                span{
+                    margin: 0 10px;
+                }
+                }
+            }
+        }
+        .tie{
+            width: 1100px;
+            margin: 0 auto;
+          a{
+               width: 100px;
+               display: flex;
+               justify-content: space-around;
+               margin-left: 950px;
+               h6{
+                   width: 20px;
+                   line-height: 16px;
+               }
+           }
+        }
+        .jies{
+            width: 1100px;
+            height: 40px;
+            background: #fafafa;
+            padding:10px;
+            margin: 30px auto;
+            a{
+                display: block;
+                width: 144px;
+                height: 40px;
+                margin-left:950px;
+                background: #c60c21;
+                text-align: center;
+                line-height: 40px;
+                font-size: 18px;
+                color: white;
+            }
+        }
+        .thea{
+            width: 1130px;
+            margin: 20px auto;
+            padding-bottom: 10px;
+            border-bottom:1px solid black ;
+            .twa{
+                font-weight: 800;
+                font-size: 14px;
+                color: black;
+                display: block;
+                height: 30px;
+                width: 150px;
+                text-align: center;
+                line-height: 30px;
+                float: left;
+            }
+            .lasta{
+                color: black;
+                font-size: 12px;
+            }
+        }
+    }
+    #box{
+        width:1130px;
+        margin:20px auto;
+        ul{
+            width: 1130px;
+             display:flex;
+             justify-content:space-between;
+             flex-wrap:wrap;
+             margin: 0 auto;
+            li{
+                width:254px;
+                height:422px;
+                margin-bottom:11px;
+                border:1px solid #e3e0e0;
+                padding-left: 10px;
+                text-align: center;
+                a{
+                    width: 221px;
+                    margin: 0 auto;
+                    position: relative;
+                    .picbig{
+                        margin-bottom: 15px;
+                    }
+                    .picsma{
+                        margin-bottom: 15px;
+                        margin-left: 20px;
+                    }
+                    .picdz{
+                        margin-bottom: 20px;
+                        margin-left: 20px;
+                    }
+                    .sk{
+                        position: absolute;
+                        top:200px;
+                    }
+                }
+                p{
+                    color:black;
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                }
+                span{
+                    color: #cc0000;
+                    font-size: 14px;
+                    font-weight: 800;
+                    margin-bottom: 14px;
+                    display: block;
+                }
+                .thaa{
+                    width: 268px; 
+                    height: 18px;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        width: 88px;
+                        border-right: 1px solid black;
+                        font-size: 12px;
+                        color: black;
+                        line-height: 18px;
+                        padding-right: 10px;
+                        img{
+                            display: inline-block;
+                            margin-right: 4px;
+                        }
+                    }
+                    a:hover{text-decoration:none;}
+                }
+            }
+            li:hover{
+                border: 1px solid blue;
+            }
+        }
+    }
+    #boxsc{
+        width:1130px;
+        margin:20px auto;
+        ul{
+            width: 1130px;
+             display:flex;
+             justify-content:space-between;
+             flex-wrap:wrap;
+             margin: 0 auto;
+            li{
+                width:254px;
+                height:422px;
+                margin-bottom:11px;
+                border:1px solid #e3e0e0;
+                padding-left: 10px;
+                text-align: center;
+                a{
+                    width: 221px;
+                    margin: 0 auto;
+                    position: relative;
+                    .picbig{
+                        margin-bottom: 15px;
+                    }
+                    .picsma{
+                        margin-bottom: 15px;
+                        margin-left: 20px;
+                    }
+                    .picdz{
+                        margin-bottom: 20px;
+                        margin-left: 20px;
+                    }
+                    .sk{
+                        position: absolute;
+                        top:200px;
+                    }
+                }
+                p{
+                    color:black;
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                }
+                span{
+                    color: #cc0000;
+                    font-size: 14px;
+                    font-weight: 800;
+                    margin-bottom: 14px;
+                    display: block;
+                }
+                .thaa{
+                    width: 268px; 
+                    height: 18px;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        width: 88px;
+                        border-right: 1px solid black;
+                        font-size: 12px;
+                        color: black;
+                        line-height: 18px;
+                        padding-right: 10px;
+                        img{
+                            display: inline-block;
+                            margin-right: 4px;
+                        }
+                    }
+                    a:hover{text-decoration:none;}
+                }
+            }
+            li:hover{
+                border: 1px solid blue;
+            }
+        }
+    }
+}

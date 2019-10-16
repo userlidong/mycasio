@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>列表页</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/list.css">
     <link rel="stylesheet" href="css/public.css">
@@ -52,7 +51,7 @@
             </ul>
             <from>
                 <div class="logoRight">
-                    <input type="text" name="" id="inp" placeholder="辞计旅行的沙发" >
+                    <input type="text" name="" id="inp" placeholder="辞计旅行的沙发" style="outline:none;border:1px solid #898989">
                     <a href="#"><i class="iconfont icon-chazhao"></i> </a> 
                 </div>
             </from>  
@@ -410,54 +409,227 @@
        
     </div>
 
-   
+
+
+    <!-- 多选按钮 -->
+    <div class="check">
+        <div class="checksma">
+            <h2>产品筛选</h2>
+            <table style="border-collapse:collapse;">
+                <tr>
+                    <td style="font-weight: 800;color: black;font-size:14px;">系列</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">G-SHOCK</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">EDIFICE</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 800;color: black;font-size:14px;">表带材质</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">钢表带</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">皮表带</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">树脂及其他</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">钛金属表带</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 800;color: black;font-size:14px;">颜色</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">橙色</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">黑色</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">红色</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">紫色</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">粉色</td>
+                    <td><a href="#">更多...</a></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 800;color: black;font-size:14px;">功能关键字</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">蓝牙</td>
+                    <td title="智能情侣手表"><input type="checkbox">抗低温</td>
+                    <td title="智能情侣手表"><input type="checkbox">智能操作</td>
+                    <td title="智能情侣手表"><input type="checkbox">电波</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">太阳能动力</td>
+                    <td><a href="#">更多...</a></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 800;color: black;font-size:14px;">人群</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">男士</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">女士</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">情侣</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 800;color: black;font-size:14px;">特色服务</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">个性定制</td>
+                    <td title="情侣手表值得拥有"><input type="checkbox">招行分期</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style="border-bottom: 1px solid black;">
+                    <td style="font-weight: 800;color: black;font-size:14px;">价格</td>
+                    <td><input type="text" value="0"></td>
+                    <td><input type="text" value="0"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="ttw">
+                <a href="#" class="ona">按条件搜索</a>
+                <a href="#" class="twa">清除搜索条件</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="duo">
+        <div class="duosma">
+            <a href="#" style="background: black; color: white;">按最新新品排序</a>
+            <a href="#">按销量排序</a>
+            <a href="#">按人气排序</a>
+            <a href="#">价格从高到低</a>
+            <a href="#">价格从低到高</a>
+            <a href="#" style="background: white;"><input type="checkbox">仅显示有货商品</a>
+        </div>
+    </div>
+
+    <!-- 列表内容 -->
     <div id = "box">
-        <!-- <input id="btn-previous" type="button" value="<"/>
-        <input id="btn-next" type="button" value=">"/> -->
         <ul>
             <li class="olia">
-                <a href="img/list/1.png"></a>
-                <p></p>  
-                <span></span>    
+                    <a href="#">
+                        <img src="img/list/7.png" alt="" class="picbig">
+                        <img src="img/list/shou.png" alt="" class="sk">
+                        <img src="img/list/77.png" alt="" style="border:1px solid gray;" class="picsma">
+                        <img src="img/list/ding.png" alt="" class="picdz">
+                    </a>  
+                    <p>时尚运动黑金系列防水对表GA-110GB-1A&BA-110-1A</p>
+                    <span>￥3,390.00</span>
+                    <div class="thaa">
+                        <a href="#"><i class="iconfont icon-gouwuche"></i>加入购物车</a>
+                        <a href="#"><img src="img/list/db.png" alt="">对比</a>
+                        <a href="#" style="border: none;"><img src="img/list/sc.png" alt="">收藏</a>
+                    </div>
             </li>
             <li class="olia">
-                <a href="img/list/2.jpg"></a>
-                <p></p>  
-                <span></span>    
+                <a href="#">
+                    <img src="img/list/3.png" alt="" class="picbig">
+                    <img src="img/list/11.png" alt="" style="border:1px solid gray;" class="picsma">
+                    <img src="img/list/ding.png" alt="" class="picdz">
+                </a>  
+                <p>人造蓝宝石玻璃镜面 防水商务男表EFB-650L-7A</p>
+                <span>￥1,390.00</span>
+                <div class="thaa">
+                    <a href="#"><i class="iconfont icon-gouwuche"></i>加入购物车</a>
+                    <a href="#"><img src="img/list/db.png" alt="">对比</a>
+                    <a href="#" style="border: none;"><img src="img/list/sc.png" alt="">收藏</a>
+                </div>
             </li>
             <li class="olia">
-                <a href="img/list/3.jpg"></a>
-                <p></p>
-                <span></span>    
+                <a href="#">
+                    <img src="img/list/1.png" alt="" class="picbig">
+                    <img src="img/list/111.png" alt="" style="border:1px solid gray;" class="picsma">
+                    <img src="img/list/ding.png" alt="" class="picdz">
+                </a>  
+                <p>防震防水时尚运动对表G-5600E-1&BGD-560-4</p>
+                <span>￥2,390.00</span>
+                <div class="thaa">
+                    <a href="#"><i class="iconfont icon-gouwuche"></i>加入购物车</a>
+                    <a href="#"><img src="img/list/db.png" alt="">对比</a>
+                    <a href="#" style="border: none;"><img src="img/list/sc.png" alt="">收藏</a>
+                </div>
             </li>
             <li class="olia">
-                <a href="img/list/4.jpg"></a>
-                <p></p> 
-                <span></span>    
+                <a href="#">
+                    <img src="img/list/4.png" alt="" class="picbig">
+                    <img src="img/list/44.png" alt="" style="border:1px solid gray;" class="picsma">
+                    <img src="img/list/ding.png" alt="" class="picdz">
+                </a>  
+                <p>时尚潮流防水防震运动对表GA-110GB-1A&GMA-S110MP-7A</p>
+                <span>￥2,990.00</span>
+                <div class="thaa">
+                    <a href="#"><i class="iconfont icon-gouwuche"></i>加入购物车</a>
+                    <a href="#"><img src="img/list/db.png" alt="">对比</a>
+                    <a href="#" style="border: none;"><img src="img/list/sc.png" alt="">收藏</a>
+                </div>
+            </li>
+            <li class="olia">
+                    <a href="#">
+                        <img src="img/list/8.png" alt="" class="picbig">
+                        <img src="img/list/shou.png" alt="" class="sk">
+                        <img src="img/list/88.png" alt="" style="border:1px solid gray;" class="picsma">
+                        <img src="img/list/ding.png" alt="" class="picdz">
+                    </a>  
+                    <p>时尚运动黑金系列防水对表GA-110GB-1A&BA-110-1A</p>
+                    <span>￥3,390.00</span>
+                    <div class="thaa">
+                        <a href="#"><i class="iconfont icon-gouwuche"></i>加入购物车</a>
+                        <a href="#"><img src="img/list/db.png" alt="">对比</a>
+                        <a href="#" style="border: none;"><img src="img/list/sc.png" alt="">收藏</a>
+                    </div>
+            </li>
+            <li class="olia">
+                    <a href="#">
+                        <img src="img/list/4.png" alt="" class="picbig">
+                        <img src="img/list/44.png" alt="" style="border:1px solid gray;" class="picsma">
+                        <img src="img/list/ding.png" alt="" class="picdz">
+                    </a>  
+                    <p>时尚潮流防水防震运动对表GA-110GB-1A&GMA-S110MP-7A</p>
+                    <span>￥2,990.00</span>
+                    <div class="thaa">
+                        <a href="#"><i class="iconfont icon-gouwuche"></i>加入购物车</a>
+                        <a href="#"><img src="img/list/db.png" alt="">对比</a>
+                        <a href="#" style="border: none;"><img src="img/list/sc.png" alt="">收藏</a>
+                    </div>
+            </li>
+            <li class="olia">
+                <a href="#">
+                    <img src="img/list/aa.png" alt="" class="picbig">
+                    <img src="img/list/a.png" alt="" style="border:1px solid gray;" class="picsma">
+                    <img src="img/list/ding.png" alt="" class="picdz">
+                </a>  
+                <p>人造蓝宝石玻璃镜面 防水商务男表EFB-650L-7A</p>
+                <span>￥1,390.00</span>
+                <div class="thaa">
+                    <a href="#"><i class="iconfont icon-gouwuche"></i>加入购物车</a>
+                    <a href="#"><img src="img/list/db.png" alt="">对比</a>
+                    <a href="#" style="border: none;"><img src="img/list/sc.png" alt="">收藏</a>
+                </div>
+            </li>
+            <li class="olia">
+                <a href="#">
+                    <img src="img/list/1.png" alt="" class="picbig">
+                    <img src="img/list/111.png" alt="" style="border:1px solid gray;" class="picsma">
+                    <img src="img/list/ding.png" alt="" class="picdz">
+                </a>  
+                <p>防震防水时尚运动对表G-5600E-1&BGD-560-4</p>
+                <span>￥2,390.00</span>
+                <div class="thaa">
+                    <a href="#"><i class="iconfont icon-gouwuche"></i>加入购物车</a>
+                    <a href="#"><img src="img/list/db.png" alt="">对比</a>
+                    <a href="#" style="border: none;"><img src="img/list/sc.png" alt="">收藏</a>
+                </div>
             </li>
         </ul>
     </div>
 
 
 
-    <nav aria-label="Page navigation" id="nan">
-        <ul class="pagination">
-          <li>
-            <a href="#" aria-label="Previous" id="btn-previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li>
-           <a href="#" aria-label="Next" id="btn-next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+   <div class="xia">
+       <div class="xiasma">
+           <a href="#"><</a>
+           <a href="#">1</a>
+           <a href="#">2</a>
+           <a href="#">3</a>
+           <a href="#">...</a>
+           <a href="#">></a>
+       </div>
+   </div>
 
 
     <div class="fiv">
@@ -633,7 +805,7 @@
     let banner = new BannerPlay(oBox,oImg,oLi,btnPrevious,btnNext);
     banner.eventBindBtn();
 
-    动态获取数据渲染页面
+    // 动态获取数据渲染页面
     // class Paging{
 	// 	constructor(newLi) {
 	// 	    this.index = 0;

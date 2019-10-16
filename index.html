@@ -20,9 +20,11 @@
                 <li><a href="#">卡西欧官网</a></li>
             </ul>
             <ul class="headerRight">
-                <li><a href="http://localhost/mycasio/denglu.html" title = "登录">登录</a></li>
-                <li><a href="http://localhost/mycasio/zhuce.html" title = "注册">注册</a></li>
-                <li><a href="#">积分值</a></li>
+                <li><a href="http://localhost/mycasio/denglu.html" title = "登录" id="dl">登录</a></li>
+                <li style="color: white; display:none; font-size:12px;" id="wel"><a href="#"></a></li>
+                <li style="color: white; display:none; font-size:12px;" id="tcc"><a href="#">退出</a></li>
+                <li><a href="http://localhost/mycasio/zhuce.html" title = "注册" id="zc">注册</a></li>
+                <li><a href="#" id="jfz">积分值</a></li>
                 <li><a href="#" title = "购物车"><i class="iconfont icon-gouwuche"></i>购物车<span>0</span></a></li>
             </ul>
         </div>
@@ -51,7 +53,7 @@
             </ul>
             <from>
                 <div class="logoRight">
-                    <input type="text" name="" id="inp" placeholder="辞计旅行的沙发" >
+                    <input type="text" name="" id="inp" placeholder="辞计旅行的沙发" style="outline: none;border:1px solid #898989">
                     <a href="#"><i class="iconfont icon-chazhao"></i> </a> 
                 </div>
             </from>  
@@ -68,7 +70,7 @@
                         <th><a href="#">EDIFICE</a></th>   
                         <th><a href="#">SHEEN</a></th>   
                         <th><a href="#">PRO TREK</a></th>   
-                        <th><a href="#">情侣对表系列</a></th>   
+                        <th><a href="list.html">情侣对表系列</a></th>   
                         <th><a href="#">特殊限定款</a></th>   
                     </tr>
                     <tr>
@@ -95,7 +97,7 @@
                         <td><a href="#">男皮表带</a></td>
                         <td><a href="#">优雅系列</a></td>
                         <td><a href="#">电波系列</a></td>
-                        <td rowspan="2"><a href="#">G-SHOCK&BABY-G情侣<br>对表</a></td>
+                        <td rowspan="2"><a href="list.html">G-SHOCK&BABY-G情侣<br>对表</a></td>
                         <td><a href="#">时尚小金表</a></td>
                     </tr>
                     <tr>
@@ -112,7 +114,7 @@
                         <td><a href="#">男钢表带</a></td>
                         <td><a href="#">简约系列</a></td>
                         <td><a href="#"></a></td>
-                        <td><a href="#">EDIFICE&SHEEN情侣对表</a></td>
+                        <td><a href="list.html">EDIFICE&SHEEN情侣对表</a></td>
                         <th rowspan="5"><a href="#"><img src="img/index/sel8.jpg" alt=""></a></th>
                     </tr>
                     <tr>
@@ -747,4 +749,79 @@
         let btnNext = $("#btn-next").eq(0); //获取右按钮
         let banner = new BannerPlay(oBox,oImg,oLi,btnPrevious,btnNext);
         banner.eventBindBtn();
+
+
+//保存cookie（添加）
+//参数：
+// 键
+// 值
+// 有效期:(单位：多少天)
+//
+function addCookie(key,value,dayCount,path,domain){
+    let d = new Date();
+    d.setDate(d.getDate()+dayCount);
+
+    //escape（）：编码
+    let str =`${key}=${escape(value)};expires=${d.toGMTString()}`;
+    if(path!=undefined){
+        str+=`;path=${path}`;
+    }
+    
+    if(domain!=undefined){
+        str+=`;domain=${domain}`;
+    }
+    document.cookie = str;
+}
+
+
+//获取cookie（查询）根据键获取值
+//参数：
+// 键
+//返回值：值（键对应的值）
+
+function getCookie(key){  
+    //document.cookie的示例： usernamet=hi; username=jzm; userpass=123
+    var str = unescape(document.cookie);//unescape:解码
+    //1、分割成数组
+    let arr = str.split("; "); //arr=["usernamet=hi","username=jzm","userpass=123"];
+    //2、循环arr，
+    for(var i in arr){
+        if(arr[i].startsWith(key+"=")){
+            let [,value]=arr[i].split("=");//["username","jzm"]
+            return value;
+        }
+    }
+    return null;
+}
+//删除cookie:(cookie不能直接删除，可以通过设置过期时间为过去，进行删除)
+//参数：
+//键
+//返回值：无
+function removeCookie(key){//removeCookie("username");
+    addCookie(key,"",-1);
+}
+
+        function showUser(){
+            let uame = getCookie("username");
+            if(uame!=null){
+                $("#wel").html('欢迎您 : '+uame);
+                $("#wel").show();//显示
+                $("#tcc").show();
+                $("#dl").hide();
+                $("#zc").hide();
+            }else{
+                $("#wel").hide()
+                $("#tcc").hide();
+                $("#zc").show();
+                $("#dl").show();
+            }
+        }
+   $(function(){
+        showUser();
+        $("#tcc").click(function(){
+            console.log(2555)
+            removeCookie("username");
+            showUser();
+        });
+    });
 </script>

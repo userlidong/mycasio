@@ -37,14 +37,14 @@ img{
             float: left;
             width: 525px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             line-height: 40px;
         }
         .headerTop .headerRight{
             float: right;
-            width: 310px;
+            width: 480px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             line-height: 40px;
         }
         .headerTop ul .iconfont{
